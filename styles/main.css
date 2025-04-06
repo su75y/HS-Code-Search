@@ -1,0 +1,248 @@
+/* Theme Colors */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+}
+
+/* Header Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 0 !important;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Ad Containers */
+.ad-container {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ad-placeholder {
+    color: var(--secondary-color);
+    padding: 2rem;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+/* Search Results */
+.result-item {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.result-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.result-item h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.result-item p {
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+/* Page Content */
+.page-content {
+    padding: 2rem 0;
+}
+
+.page-title {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Services */
+.service-item {
+    background: #fff;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.service-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Contact */
+.contact-info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.sponsor-text {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    color: #f0f0f0;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-right: 3rem !important;
+    }
+    
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+    }
+}
+
+/* Search Input */
+.form-control {
+    border: 2px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(0,86,179,0.25);
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: #495057;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #0056b3;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    margin: 2rem auto;
+}
+
+/* Initial Message */
+.initial-message {
+    padding: 2rem;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
